@@ -1,16 +1,11 @@
-import Hero from "@/components/Hero/Hero";
-import SummerCare from "@/components/Home/SummerCare";
-import TopBrand from "@/components/Home/TopBrand";
-import Populars from "@/components/Products/Populars";
+
+import HomePage from "@/components/Home/home";
 
 
 export default function Home() {
   return (
    <>
-   <Hero/>
-    <Populars/>
-    <SummerCare/>
-    <TopBrand/>
+     <HomePage/>
  
    </>
   );
