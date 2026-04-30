@@ -8,7 +8,7 @@ const Hero = () => {
     
 
       <div
-  className="hero min-h-screen"
+  className="hero min-h-screen "
   style={{
       backgroundImage: "url(https://i.ibb.co.com/4Rndjkjk/heroback-Image.png)",
       backgroundPosition: 'center',

@@ -19,7 +19,7 @@
     "rating": 4.5,
     "stock": 18,
     "description": "Lightweight cotton t-shirt designed for hot summer days.",
-    "image": "https://i.ibb.co.com/HDTXxnFH/T-Shirt.jpg",
+    "image": "https://i.ibb.co.com/9mF0mchs/t-shert.jpg",
     "category": "Clothing"
   },
   {
@@ -30,7 +30,7 @@
     "rating": 4.6,
     "stock": 14,
     "description": "Rechargeable mini fan with strong airflow and compact design.",
-    "image": "https://i.ibb.co.com/gb5t5nPv/Mini-Fan.jpg",
+    "image": "https://i.ibb.co.com/nNLCZWC9/mini-Fan.jpg",
     "category": "Electronics"
   },
   {
@@ -52,7 +52,7 @@
     "rating": 4.3,
     "stock": 11,
     "description": "Elegant straw hat that protects you from harsh sunlight.",
-    "image": "https://i.ibb.co.com/4RCVmp5J/Straw-Hat.jpg",
+    "image": "https://i.ibb.co.com/wNvt67H1/summer-Hat.jpg",
     "category": "Accessories"
   },
   {
@@ -85,7 +85,7 @@
     "rating": 4.7,
     "stock": 9,
     "description": "Spacious and stylish backpack perfect for summer trips.",
-    "image": "https://i.ibb.co.com/DPxGBBsy/backpak.jpg",
+    "image": "https://i.ibb.co.com/BWjWN1n/summer-Bug.jpg",
     "category": "Travel"
   }
 ]
