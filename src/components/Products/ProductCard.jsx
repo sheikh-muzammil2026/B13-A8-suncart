@@ -22,7 +22,7 @@ const ProductCard = ({product}) => {
 
 
 {/* daisy card  */}
-      <div className="card bg-base-100 w-96 shadow-sm">
+      <div className="card bg-base-100 shadow-sm p-2">
   <figure>
     <Image
       src={image}
@@ -31,7 +31,8 @@ const ProductCard = ({product}) => {
       height={200}
       />
   </figure>
-  <div className="card-body">
+  <div className="divider"></div>
+  <div className="">
     
      <p className="text-sm text-orange-500 font-medium mb-2">
           {category}
@@ -39,10 +40,10 @@ const ProductCard = ({product}) => {
 
        <h2 className="card-title">{name}</h2>
 
-        <p className="text-gray-500 mb-4">
+        <p className="text-gray-500">
           Brand: {brand}
         </p>
-         <div className="flex items-center justify-between mb-5">
+         <div className="flex items-center justify-between px-2 mb-3">
             <h3 className="text-2xl font-bold text-orange-500">
               ${price}
             </h3>
