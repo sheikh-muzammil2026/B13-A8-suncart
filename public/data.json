@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for summer outings.",
+    "image": "https://i.postimg.cc/3N9QmG7P/sunglasses.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Beach Cotton T-Shirt",
+    "brand": "CoolWear",
+    "price": 22,
+    "rating": 4.5,
+    "stock": 18,
+    "description": "Lightweight cotton t-shirt designed for hot summer days.",
+    "image": "https://i.postimg.cc/fL2R0G8Q/tshirt.png",
+    "category": "Clothing"
+  },
+  {
+    "id": 3,
+    "name": "Portable Mini Fan",
+    "brand": "BreezeGo",
+    "price": 18,
+    "rating": 4.6,
+    "stock": 14,
+    "description": "Rechargeable mini fan with strong airflow and compact design.",
+    "image": "https://i.postimg.cc/Qxj7kQ1B/fan.png",
+    "category": "Electronics"
+  },
+  {
+    "id": 4,
+    "name": "Hydration Water Bottle",
+    "brand": "HydroMax",
+    "price": 12,
+    "rating": 4.4,
+    "stock": 25,
+    "description": "Durable BPA-free water bottle to keep you hydrated all day.",
+    "image": "https://i.postimg.cc/7L2mK0hM/bottle.png",
+    "category": "Lifestyle"
+  },
+  {
+    "id": 5,
+    "name": "Summer Straw Hat",
+    "brand": "SunnyStyle",
+    "price": 17,
+    "rating": 4.3,
+    "stock": 11,
+    "description": "Elegant straw hat that protects you from harsh sunlight.",
+    "image": "https://i.postimg.cc/0Q4YyK7n/hat.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 6,
+    "name": "Flip Flop Sandals",
+    "brand": "WaveWalk",
+    "price": 20,
+    "rating": 4.5,
+    "stock": 16,
+    "description": "Comfortable and lightweight sandals ideal for beaches and travel.",
+    "image": "https://i.postimg.cc/Dz0m8QfH/sandals.png",
+    "category": "Footwear"
+  },
+  {
+    "id": 7,
+    "name": "SPF 50 Sunscreen Lotion",
+    "brand": "SkinGuard",
+    "price": 14,
+    "rating": 4.8,
+    "stock": 20,
+    "description": "High protection sunscreen lotion for all skin types.",
+    "image": "https://i.postimg.cc/m2nL1k0P/sunscreen.png",
+    "category": "Skincare"
+  },
+  {
+    "id": 8,
+    "name": "Summer Travel Backpack",
+    "brand": "TravelPro",
+    "price": 35,
+    "rating": 4.7,
+    "stock": 9,
+    "description": "Spacious and stylish backpack perfect for summer trips.",
+    "image": "https://i.postimg.cc/t4XK8Y9x/backpack.png",
+    "category": "Travel"
+  }
+]
