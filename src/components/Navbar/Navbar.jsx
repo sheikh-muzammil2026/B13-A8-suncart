@@ -63,7 +63,7 @@ const Navbar = () => {
               <>
                 {/* User Avatar */}
                 <Image
-                  src="https://i.ibb.co.com/4pDNDk1/avatar.png"
+                  src="https://i.ibb.co.com/XrH9m4Zt/avatar.png"
                   alt="user"
                   className="w-10 h-10 rounded-full border-2 border-orange-400"
                   width={40}

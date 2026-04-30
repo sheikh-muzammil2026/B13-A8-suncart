@@ -16,21 +16,21 @@ const SummerCare = () => {
       <div className="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-orange-500">
         <div className="text-4xl mb-4">💧</div>
         <h3 className="text-xl font-semibold mb-2">Stay Hydrated</h3>
-        <p className="text-gray-600">গরম থেকে বাঁচতে দিনে অন্তত ৩-৪ লিটার পানি পান করুন। সাথে ডাব বা লেবুর শরবত রাখতে পারেন।</p>
+        <p className="text-gray-600">Drink at least 3-4 liters of water daily to stay hydrated. You can also include coconut water or fresh lemonade in your routine.</p>
       </div>
 
       {/* Tip 2 */}
       <div className="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-orange-500">
         <div className="text-4xl mb-4">🧴</div>
         <h3 className="text-xl font-semibold mb-2">Skin Protection</h3>
-        <p className="text-gray-600">বাইরে বের হওয়ার ২০ মিনিট আগে অবশ্যই SPF 50 সানস্ক্রিন ব্যবহার করুন ত্বককে রক্ষা করতে।</p>
+        <p className="text-gray-600">Protect your skin by applying SPF 50 sunscreen at least 20 minutes before heading outdoors.</p>
       </div>
 
       {/* Tip 3 */}
       <div className="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-orange-500">
         <div className="text-4xl mb-4">👕</div>
         <h3 className="text-xl font-semibold mb-2">Wear Cotton</h3>
-        <p className="text-gray-600">আরামদায়ক ও হালকা রঙের সুতির পোশাক পরুন যা বাতাস চলাচল করতে সাহায্য করবে।</p>
+        <p className="text-gray-600">Wear comfortable, light-colored cotton clothing to ensure better airflow and stay cool.</p>
       </div>
     </div>
   </div>
