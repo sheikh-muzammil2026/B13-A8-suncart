@@ -1,4 +1,5 @@
 [
+
   {
     "id": 1,
     "name": "UV Protection Sunglasses",
@@ -7,7 +8,7 @@
     "rating": 4.7,
     "stock": 10,
     "description": "Stylish UV protection sunglasses perfect for summer outings.",
-    "image": "https://i.postimg.cc/3N9QmG7P/sunglasses.png",
+    "image": "https://i.ibb.co.com/G455cHMv/Sunglasses.jpg",
     "category": "Accessories"
   },
   {
@@ -18,7 +19,7 @@
     "rating": 4.5,
     "stock": 18,
     "description": "Lightweight cotton t-shirt designed for hot summer days.",
-    "image": "https://i.postimg.cc/fL2R0G8Q/tshirt.png",
+    "image": "https://i.ibb.co.com/HDTXxnFH/T-Shirt.jpg",
     "category": "Clothing"
   },
   {
@@ -29,7 +30,7 @@
     "rating": 4.6,
     "stock": 14,
     "description": "Rechargeable mini fan with strong airflow and compact design.",
-    "image": "https://i.postimg.cc/Qxj7kQ1B/fan.png",
+    "image": "https://i.ibb.co.com/gb5t5nPv/Mini-Fan.jpg",
     "category": "Electronics"
   },
   {
@@ -40,7 +41,7 @@
     "rating": 4.4,
     "stock": 25,
     "description": "Durable BPA-free water bottle to keep you hydrated all day.",
-    "image": "https://i.postimg.cc/7L2mK0hM/bottle.png",
+    "image": "https://i.ibb.co.com/HZqwb0M/Bottl.jpg",
     "category": "Lifestyle"
   },
   {
@@ -51,7 +52,7 @@
     "rating": 4.3,
     "stock": 11,
     "description": "Elegant straw hat that protects you from harsh sunlight.",
-    "image": "https://i.postimg.cc/0Q4YyK7n/hat.png",
+    "image": "https://i.ibb.co.com/4RCVmp5J/Straw-Hat.jpg",
     "category": "Accessories"
   },
   {
@@ -62,7 +63,7 @@
     "rating": 4.5,
     "stock": 16,
     "description": "Comfortable and lightweight sandals ideal for beaches and travel.",
-    "image": "https://i.postimg.cc/Dz0m8QfH/sandals.png",
+    "image": "https://i.ibb.co.com/RTPbMhPw/sandles.jpg",
     "category": "Footwear"
   },
   {
@@ -73,7 +74,7 @@
     "rating": 4.8,
     "stock": 20,
     "description": "High protection sunscreen lotion for all skin types.",
-    "image": "https://i.postimg.cc/m2nL1k0P/sunscreen.png",
+    "image": "https://i.ibb.co.com/gMCZzBMN/lotion.jpg",
     "category": "Skincare"
   },
   {
@@ -84,7 +85,7 @@
     "rating": 4.7,
     "stock": 9,
     "description": "Spacious and stylish backpack perfect for summer trips.",
-    "image": "https://i.postimg.cc/t4XK8Y9x/backpack.png",
+    "image": "https://i.ibb.co.com/DPxGBBsy/backpak.jpg",
     "category": "Travel"
   }
 ]

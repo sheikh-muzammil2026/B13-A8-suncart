@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md">
       
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Logo */}
         <div>
@@ -71,7 +71,7 @@ const Navbar = () => {
                 />
 
                 {/* Logout Button */}
-                <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg duration-300">
+                <button className="btn carsor-pointer bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg duration-300">
                   Logout
                 </button>
               </>
@@ -79,14 +79,14 @@ const Navbar = () => {
               <>
                 {/* Login Button */}
                 <Link href="/login">
-                  <button className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-5 py-2 rounded-lg duration-300">
+                  <button className="btn cursor-pointer border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-5 py-2 rounded-lg duration-300">
                     Login
                   </button>
                 </Link>
 
                 {/* Register Button */}
                 <Link href="/register">
-                  <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg duration-300">
+                  <button className="btn cursor-pointer bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg duration-300">
                     Register
                   </button>
                 </Link>
