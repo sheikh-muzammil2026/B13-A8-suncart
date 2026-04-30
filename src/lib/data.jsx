@@ -3,3 +3,5 @@ export const ProductsDataPromises = async() =>{
         const product = await res.json();
         return product;
 }
+
+export const products = await ProductsDataPromises();

@@ -1,12 +1,12 @@
 import React from 'react';
 import ProductCard from './ProductCard';
-import { ProductsDataPromises } from './data';
+import { ProductsDataPromises } from '../../lib/data';
 import Link from 'next/link';
 
 
 const Populars =  async() => {
     const products = await ProductsDataPromises();
-    console.log(products);
+    // console.log(products);
     return (
        <>
        <div className="container mx-auto mt-20">
@@ -19,7 +19,7 @@ const Populars =  async() => {
             products.slice(0,3).map((product, index)=> (<ProductCard key={index} product={product}/>))
         }
         </div>
-       <div className="btn-container text-center"><Link href={'/products'}> <button className="btn btn-primary mt-5 ">Show All Products</button></Link></div>
+       <div className="btn-container text-center"><Link href={'/products'}> <button className="btn btn-primary mt-5 ">Explore All Products</button></Link></div>
        </div>
        </>
     );

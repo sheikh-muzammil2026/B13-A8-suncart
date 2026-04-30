@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from '../Hero/Hero';
+import Hero from './Hero';
 import Populars from '../Products/Populars';
 import SummerCare from './SummerCare';
 import TopBrand from './TopBrand';
