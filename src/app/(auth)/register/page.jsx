@@ -3,6 +3,7 @@ import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const RegisterPage = () => {
         const router = useRouter();
@@ -12,6 +13,7 @@ const RegisterPage = () => {
        const name = e.target.name.value;
        const email = e.target.email.value;
        const password = e.target.password.value;
+       const image = e.target.image.value;
     //    console.log(name, email, password, "from register page")
 
        const {data, error} = await authClient.signUp.email(
@@ -19,6 +21,8 @@ const RegisterPage = () => {
         name: name, // required
         email: email, // required
         password: password, // required
+        image: image,
+        autoSignIn: false,
         callbackURL: "/",
        },
        {
@@ -27,11 +31,13 @@ const RegisterPage = () => {
         },
         onSuccess: (ctx) => {
             //redirect to the dashboard or sign in page
-            router.push('/')
+            toast.success("Registration successful! Login now.")
+            authClient.signOut();
+            router.push('/login')
         },
         onError: (ctx) => {
             // display the error message
-            alert(ctx.error.message);
+            toast.error(ctx.error.message)
         },
     });
     
@@ -58,6 +64,7 @@ const RegisterPage = () => {
                     <input 
                         name="name"
                         type="text" 
+                        required
                         placeholder="Jhon" 
                         className="input input-bordered w-full rounded-2xl focus:border-orange-400 focus:outline-none bg-gray-50 border-none h-12" 
                     />
@@ -71,7 +78,23 @@ const RegisterPage = () => {
                     <input 
                         name='email'
                         type="email" 
+                        required
                         placeholder="example@mail.com" 
+                        className="input input-bordered w-full rounded-2xl focus:border-orange-400 focus:outline-none bg-gray-50 border-none h-12" 
+                    />
+                </div>
+
+                {/* URL Field */}
+                <div className="form-control w-full">
+                    <label className="label">
+                        <span className="label-text font-bold text-gray-600">Image URL</span>
+                       
+                    </label>
+                    <input 
+                        name='image'
+                        type="url"
+                        required
+                        placeholder="http://example.com/profile.png" 
                         className="input input-bordered w-full rounded-2xl focus:border-orange-400 focus:outline-none bg-gray-50 border-none h-12" 
                     />
                 </div>
@@ -86,6 +109,7 @@ const RegisterPage = () => {
                         name='password'
                         type="password" 
                         placeholder="••••••••" 
+                        required
                         className="input input-bordered w-full rounded-2xl focus:border-orange-400 focus:outline-none bg-gray-50 border-none h-12" 
                     />
                 </div>

@@ -1,10 +1,27 @@
+"use client"
+import RegistredDataLoading from '@/app/(auth)/register/loading';
+import { authClient } from '@/lib/auth-client';
 import Image from 'next/image';
+
 import Link from 'next/link';
 import React from 'react';
 
 
 
 const ProductCard = ({product}) => {
+     const { 
+            data: session, 
+            isPending, //loading state
+            // error, //error object
+            // refetch //refetch the session
+        } = authClient.useSession() 
+
+        if (isPending) return <RegistredDataLoading/>
+    
+        // console.log(session);
+        const user = session?.user;
+    
+
   // console.log(product);
      const {
       id,
@@ -69,7 +86,7 @@ const ProductCard = ({product}) => {
   </div>
 
   <div className="card-actions mt-2">
-    <Link href={`/products/${id}`} className="w-full">
+    <Link href={user ? `/products/${id}` : "/login"}  className="w-full">
       <button className="w-full py-2.5 bg-gray-900 hover:bg-orange-500 text-white text-sm font-semibold rounded-xl shadow-sm hover:shadow-orange-200 transition-all duration-300 transform active:scale-95">
         View Details
       </button>

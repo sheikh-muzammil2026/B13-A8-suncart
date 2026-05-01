@@ -14,5 +14,11 @@ export const auth = betterAuth({
   }),
    emailAndPassword: { 
     enabled: true, 
+    
   },
+  user: {
+        fields: {
+            image: "image", // এটি নিশ্চিত করে যে ডাটাবেসে 'image' কলাম তৈরি হবে
+        }
+    }
 });

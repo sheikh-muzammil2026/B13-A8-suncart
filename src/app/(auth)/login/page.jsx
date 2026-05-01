@@ -2,6 +2,7 @@
 import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const LoginPage = () => {
 
@@ -11,13 +12,21 @@ const LoginPage = () => {
         const password = e.target.password.value;
         console.log(email, password);
 
-        const { data, error } = await authClient.signIn.email({
+        const { data, error } = await authClient.signIn.email(
+            {
             email: email, // required
             password: password, // required
             rememberMe: true,
             callbackURL: '/',
             
         });
+
+        if(error ){
+           toast.error(error.message || "Login failed! Please check your credentials.", {
+        position: "top-right",
+        autoClose: 3000,
+    });
+        }
         console.log(data, error, "from login in page")
     }
     return (
@@ -72,6 +81,7 @@ const LoginPage = () => {
                 </p>
             </div>
         </form>
+        
     </div>
 </div>
     );
