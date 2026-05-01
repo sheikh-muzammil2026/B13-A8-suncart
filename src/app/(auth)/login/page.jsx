@@ -1,13 +1,24 @@
 'use client'
+import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import React from 'react';
 
 const LoginPage = () => {
-    const handleLoginFunc = (e) => {
+
+    const handleLoginFunc = async(e) => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(email, password);
+
+        const { data, error } = await authClient.signIn.email({
+            email: email, // required
+            password: password, // required
+            rememberMe: true,
+            callbackURL: '/',
+            
+        });
+        console.log(data, error, "from login in page")
     }
     return (
        <div className="container mx-auto min-h-[80vh] flex items-center justify-center px-4">
