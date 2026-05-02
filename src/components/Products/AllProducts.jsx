@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProductsDataPromises } from '../../lib/data';
 import ProductCard from './ProductCard';
-import Link from 'next/link';
+
 
 const AllProducts = async() => {
     const products = await ProductsDataPromises();

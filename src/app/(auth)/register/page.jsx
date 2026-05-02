@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { toast } from 'react-toastify';
+import RegistredDataLoading from './loading';
 
 const RegisterPage = () => {
         const router = useRouter();
@@ -27,7 +28,7 @@ const RegisterPage = () => {
        },
        {
         onRequest: (ctx) => {
-            //show loading
+            <RegistredDataLoading/>
         },
         onSuccess: (ctx) => {
             //redirect to the dashboard or sign in page
