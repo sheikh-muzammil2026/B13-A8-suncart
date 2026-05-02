@@ -1,0 +1,3 @@
+BETTER_AUTH_SECRET=3cqiyIplTfBWbDImBsREjjlVJt5UXGgP
+BETTER_AUTH_URL=http://localhost:3000 
+MONGODB_URI=mongodb+srv://first-project:hidaya99900@cluster0.w9cbrwo.mongodb.net/?appName=Cluster0
