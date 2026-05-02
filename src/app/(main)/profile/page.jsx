@@ -16,6 +16,8 @@ const ProfilePage = () => {
     useEffect(() => {
     setMounted(true);
         }, []);
+
+    // if (typeof window === "undefined") return null;
    
     // ইউজার লগইন না থাকলে রিডাইরেক্ট করা
     useEffect(() => {
