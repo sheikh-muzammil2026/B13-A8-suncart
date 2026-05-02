@@ -9,7 +9,7 @@ const db = client.db("suncart");
 
 export const auth = betterAuth({
   database: mongodbAdapter(db, {
-    // Optional: if you don't provide a client, database transactions won't be enabled.
+    
     client
   }),
    emailAndPassword: { 
@@ -18,7 +18,7 @@ export const auth = betterAuth({
   },
   user: {
         fields: {
-            image: "image", // এটি নিশ্চিত করে যে ডাটাবেসে 'image' কলাম তৈরি হবে
+            image: "image", 
         }
     }
 });

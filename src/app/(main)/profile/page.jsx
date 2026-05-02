@@ -4,28 +4,29 @@ import RegistredDataLoading from "@/app/(auth)/register/loading";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+// import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
+
 
 const ProfilePage = () => {
     const router = useRouter();
-    const [mounted, setMounted] = useState(false);
+    // const [mounted, setMounted] = useState(false);
     const { data: session, isPending } = authClient.useSession();
 
-    // মাউন্ট হওয়া নিশ্চিত করা (Hydration Error সমাধান)
-    useEffect(() => {
-        setMounted(true);
-    }, []);
+    // // মাউন্ট হওয়া নিশ্চিত করা (Hydration Error সমাধান)
+    // useEffect(() => {
+    //     setMounted(true);
+    // }, []);
 
-    // ইউজার লগইন না থাকলে রিডাইরেক্ট করা
-    useEffect(() => {
-        if (mounted && !isPending && !session?.user) {
-            router.push("/login");
-        }
-    }, [session, isPending, router, mounted]);
+    // // ইউজার লগইন না থাকলে রিডাইরেক্ট করা
+    // useEffect(() => {
+    //     if (mounted && !isPending && !session?.user) {
+    //         router.push("/login");
+    //     }
+    // }, [session, isPending, router, mounted]);
 
-    // ১. মাউন্ট হওয়ার আগে কিছু দেখাবে না (Hydration safe)
-    if (!mounted) return null;
+    // // ১. মাউন্ট হওয়ার আগে কিছু দেখাবে না (Hydration safe)
+    // if (!mounted) return null;
 
     // ২. সেশন লোড হওয়ার সময়  কাস্টম লোডিং দেখাবে
     if (isPending) {
