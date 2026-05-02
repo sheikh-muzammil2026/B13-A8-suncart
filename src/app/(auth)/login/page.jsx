@@ -3,7 +3,6 @@ import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import React from 'react';
 import { toast } from 'react-toastify';
-// নিচের আইকনটি ব্যবহারের জন্য lucide-react ইনস্টল থাকতে হবে, অথবা আপনি আপনার পছন্দের আইকন ব্যবহার করতে পারেন
 import { Chrome } from 'lucide-react'; 
 
 const LoginPage = () => {

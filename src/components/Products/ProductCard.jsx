@@ -47,6 +47,7 @@ const ProductCard = ({product}) => {
           alt={name}
           width={220}
           height={220}
+          referrerPolicy='no-referrer'
           className="object-contain h-40 w-full hover:scale-105 transition-transform duration-300"
         />
       </figure>

@@ -1,7 +1,9 @@
 "use client";
 
 import RegistredDataLoading from "@/app/(auth)/register/loading";
+import UpdateProfileModal from "@/components/ProfileModal/UpdateProfileModal";
 import { authClient } from "@/lib/auth-client";
+import { Edit } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -10,24 +12,17 @@ import { toast } from "react-toastify";
 
 const ProfilePage = () => {
     const router = useRouter();
-    const [mounted, setMounted] = useState(false);
     const { data: session, isPending } = authClient.useSession();
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
-    useEffect(() => {
-    setMounted(true);
-        }, []);
-
-    // if (typeof window === "undefined") return null;
    
     // ইউজার লগইন না থাকলে রিডাইরেক্ট করা
     useEffect(() => {
-        if (mounted && !isPending && !session?.user) {
+        if ( !isPending && !session?.user) {
             router.push("/login");
         }
-    }, [session, isPending, router, mounted]);
+    }, [session, isPending, router]);
 
-    // ১. মাউন্ট হওয়ার আগে কিছু দেখাবে না (Hydration safe)
-    if (!mounted) return null;
 
     // ২. সেশন লোড হওয়ার সময়  কাস্টম লোডিং দেখাবে
     if (isPending) {
@@ -58,7 +53,7 @@ const ProfilePage = () => {
                     {/* Header Banner */}
                     <div className="h-32 bg-gradient-to-r from-orange-400 to-orange-600"></div>
 
-                    <div className="px-8 pb-10">
+                    <div className="px-8 pb-10 flex flex-col">
                         <div className="relative flex justify-between items-end -mt-12 mb-6">
                             <div className="p-1 bg-white rounded-full shadow-sm">
                                 <Image
@@ -66,9 +61,12 @@ const ProfilePage = () => {
                                     alt="Profile"
                                     width={120}
                                     height={120}
+                                    referrerPolicy='no-referrer'
                                     className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-4 border-white"
                                 />
+                               
                             </div>
+                            
                             
                             <button 
                                 onClick={handleLogout}
@@ -76,6 +74,7 @@ const ProfilePage = () => {
                             >
                                 Logout
                             </button>
+                            
                         </div>
 
                         <div className="space-y-6">
@@ -101,10 +100,27 @@ const ProfilePage = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div>                          
                         </div>
+                         {/* আপডেট বাটন */}
+                        
+                        <button 
+                            onClick={() => setIsModalOpen(true)}
+                            className=" mt-5 px-6 py-2 btn rounded-full text-black hover:text-white rounded hover:bg-blue-700"
+                        >
+                           <Edit/> Update Profile
+                        </button>
+
+                            {/* Modal টি এখানে কল করা হয়েছে */}
+                            <UpdateProfileModal 
+                                isOpen={isModalOpen} 
+                                onClose={() => setIsModalOpen(false)} 
+                                user={user}/>
+                        
                     </div>
+                   
                 </div>
+                
             </div>
            
         </div>

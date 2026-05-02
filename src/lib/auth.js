@@ -32,7 +32,12 @@ export const auth = betterAuth({
         fields: {
             image: "image", 
         }
-    }
+    },
+    // user: {
+    //     changeEmail: {
+    //         enabled: true,
+    //     }
+    // },
 });
 
 // import { betterAuth } from "better-auth";
