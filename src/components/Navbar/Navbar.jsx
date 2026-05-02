@@ -16,7 +16,7 @@ const Navbar = () => {
 
     if (isPending) return <RegistredDataLoading/>
 
-    console.log(session,"from navbar");
+    // console.log(session,"from navbar");
     const user = session?.user;
     // console.log(user.image, "from navbar")
 
