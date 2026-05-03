@@ -2,6 +2,7 @@ import React from 'react';
 import ProductCard from './ProductCard';
 import { ProductsDataPromises } from '../../lib/data';
 import Link from 'next/link';
+import AnimatedCard from '../framer-motion/AnimatedCard';
 
 
 const Populars =  async() => {
@@ -16,7 +17,10 @@ const Populars =  async() => {
 </div>
          <div className=' grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-4 mt-20'>
         {
-            products.slice(0,3).map((product, index)=> (<ProductCard key={index} product={product}/>))
+            products.slice(0,3).map((product, index)=> (
+                <AnimatedCard key={index} ><ProductCard product={product}/></AnimatedCard>
+           
+        ))
         }
         </div>
        <div className="btn-container text-center"><Link href={'/products'}> <button className="btn btn-primary mt-5 ">Explore All Products</button></Link></div>

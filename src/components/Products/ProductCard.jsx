@@ -8,6 +8,7 @@ import React from 'react';
 
 
 
+
 const ProductCard = ({product}) => {
      const { 
             data: session, 
@@ -38,7 +39,7 @@ const ProductCard = ({product}) => {
      
   
   
-        <div className="card bg-base-100 shadow-md hover:shadow-xl transition-all duration-300 border border-base-200 rounded-xl overflow-hidden">
+        <div className="animate__animated animate__fadeInUp card bg-base-100 shadow-md hover:shadow-xl transition-all duration-300 border border-base-200 rounded-xl overflow-hidden">
       
       {/* Image Section */}
       <figure className="p-4 bg-base-100">
@@ -95,6 +96,7 @@ const ProductCard = ({product}) => {
   </div>
 
 </div>
+
     </div>
 
     </>

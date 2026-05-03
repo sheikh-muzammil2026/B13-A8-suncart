@@ -1,6 +1,7 @@
 import React from 'react';
 import { ProductsDataPromises } from '../../lib/data';
 import ProductCard from './ProductCard';
+import AnimatedCard from '../framer-motion/AnimatedCard';
 
 
 const AllProducts = async() => {
@@ -14,7 +15,10 @@ const AllProducts = async() => {
 </div>
          <div className=' grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-4 mt-20'>
         {
-            products.map((product, index)=> (<ProductCard key={index} product={product}/>))
+            products.map((product, index)=> (
+                <AnimatedCard key={index} ><ProductCard product={product}/></AnimatedCard>
+            
+        ))
         }
         </div>
        
