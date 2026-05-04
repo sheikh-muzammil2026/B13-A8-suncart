@@ -5,7 +5,7 @@
 ---
 
 ## 🔗 Project Links
-* **Live Deployment:** https://b13-a8-suncart.vercel.app/
+* **Live Deployment:** https://b13-a8-suncart.vercel.app
 * **GitHub Repository:** https://github.com/sheikh-muzammil2026/B13-A8-suncart
 
 ---
@@ -33,11 +33,25 @@
 * `react-toastify` (Notifications)
 * `lottie-react` and `animate.css`
 
+
 ---
 
-## ⚙️ Local Installation & Setup
+### 📂 Project Structure & Routes
+/ (Home): Hero banner, Top 3 Popular Products, Summer Care Tips, and Brands.
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/sheikh-muzammil2026/B13-A8-suncart.git
-   cd suncart
+/products: Full list of summer essentials from static JSON.
+
+/product/:id (🔒): Protected detailed view of a specific product.
+
+/login / /register: Secure forms with error handling and toast messages.
+
+/my-profile (Bonus): View logged-in user details.
+
+/update-profile (Bonus): Form to update Name and Photo URL via BetterAuth.
+
+---
+
+### ✍️ Author
+Sheikh Muzammil MERN Stack Developer from Bangladesh
+
+This project was completed as part of the category-A8-Jackfruit Assignment.
